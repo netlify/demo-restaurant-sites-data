@@ -6,10 +6,10 @@ In order to maximise the opportunity for re-use, each data source will present i
 
 ## Content source build plugins
 
-- Contentful (coming sooon)
+- Contentful (coming soon)
 - Sanity (coming later)
 - Trello (coming later)
-- More source TBD
+- More sources (or should I say "sauces"?! Anyone? Hello? No?) TBD
 
 ## Site implementations
 
@@ -17,10 +17,11 @@ The following example sites which use these data sources are available.  Each si
 
 - Nuxt and Contentful: repo, demo (coming soon)
 - Nuxt and Trello repo, demo (coming soon)
+- Many more (coming later)
 
 ## Data API and schema
 
-Each data abstraction to a content source will be provided by a Netlify Build Plugin. When the build runs, the plugin will request the data from the content source and save it to the build cache as according to the structure described below.
+Each data abstraction to a content source will be provided by a Netlify Build Plugin. When the build runs, the plugin will request the data from the content source and save it to the build cache ready for the SSG to use, according to the structure described below.
 
 ### Menu
 
