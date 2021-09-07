@@ -8,6 +8,7 @@ In order to maximise the opportunity for re-use, each data source will present i
 
 - Contentful (coming soon)
 - Sanity (coming later)
+- Airtable (coming later)
 - Trello (coming later)
 - More sources (or should I say "sauces"?! Anyone? Hello? No?) TBD
 
@@ -38,10 +39,15 @@ Resource location: `/data/menu.json`
       "price": INTEGER,
       "currency": "$",
       "active": BOOLEAN,
-      "category": STRING, // for grouping by "dinner", "breakfast", "sides", "drinks" etc
-      "vegan": BOOLEAN,
-      "vegetarian": BOOLEAN,
-      "glutenFree": BOOLEAN,
+      "category": [
+        STRING,
+        ...
+      ], // for grouping by "dinner", "breakfast", "sides", "drinks" etc
+      "dietary": {
+        "vegan": BOOLEAN,
+        "vegetarian": BOOLEAN,
+        "glutenFree": BOOLEAN
+      },
       "photo:": {
         "imageUrl": STRING,
         "attribution": {
@@ -67,7 +73,11 @@ Resource location: `/data/info.json`
   "name": "The DX Deli and Grill",
   "strapline": "Too much of a good thing",
   "contact": {
-    "streetAddress": STRING,
+    "streetAddress": [
+      STRING,
+      STRING,
+      ...
+    ],
     "coords": {
       "lat": STRING,
       "long": STRING
