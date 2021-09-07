@@ -130,7 +130,7 @@ Resource location: `/data/gallery.json`
   "items": [
     {
       "caption": "A tasty thing that you can eat here",
-      "imageUrl": URL,
+      "imageUrl": STRING,
       "attribution": {
         "text": STRING,
         "url": STRING
