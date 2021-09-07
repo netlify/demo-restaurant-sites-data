@@ -1,6 +1,6 @@
 # Restaurant sites data
 
-This repo discusses and collects data source for a set of example sites. Each site is intended to be functionally identical but implemented with a variety of frameworks and data sources.
+This repo discusses and collects data sources for a set of example sites.
 
 In order to maximise the opportunity for re-use, each data source will present its data to the build in an agreed JSON structure. In this way, any SSG or framework will be able to present the content from any data source we add in future as long as it conforms to this spec.
 
@@ -13,7 +13,7 @@ In order to maximise the opportunity for re-use, each data source will present i
 
 ## Site implementations
 
-The following example sites which use these data sources are available
+The following example sites which use these data sources are available.  Each site is intended to be functionally identical but implemented with a variety of frameworks and data sources.
 
 - Nuxt and Contentful: repo, demo (coming soon)
 - Nuxt and Trello repo, demo (coming soon)
