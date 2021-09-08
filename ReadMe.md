@@ -16,7 +16,7 @@ In order to maximise the opportunity for re-use, each data source will present i
 
 The following example sites which use these data sources are available.  Each site is intended to be functionally identical but implemented with a variety of frameworks and data sources.
 
-- Nuxt and Contentful: repo, demo (coming soon)
+- Nuxt and Contentful: [repo](https://github.com/netlify/demo-restaurant-nuxt-contentful), [demo](https://demo-restaurant-contentful-nuxt.netlify.app/) (coming soon)
 - Nuxt and Trello repo, demo (coming soon)
 - Many more (coming later)
 
