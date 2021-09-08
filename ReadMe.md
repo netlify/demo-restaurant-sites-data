@@ -31,34 +31,33 @@ A set of menu items with descriptions and metadata
 Resource location: `/data/menu.json`
 
 ```json
-{
-  "items": [
-    {
-      "title": "Teetering Taco Tower",
-      "description": "A massive and frankly distressingly large tower of tacos with every filling you can imagine, and far more tacos than you need",
-      "price": INTEGER,
-      "currency": "$",
-      "active": BOOLEAN,
-      "category": [
-        STRING,
-        ...
-      ], // for grouping by "dinner", "breakfast", "sides", "drinks" etc
-      "dietary": {
-        "vegan": BOOLEAN,
-        "vegetarian": BOOLEAN,
-        "glutenFree": BOOLEAN
-      },
-      "photo:": {
-        "imageUrl": STRING,
-        "attribution": {
-          "text": STRING,
-          "url": STRING
-        }
-      }
+[
+  {
+    "title": "Teetering Taco Tower",
+    "description": "A massive and frankly distressingly large tower of tacos with every filling you can imagine, and far more tacos than you need",
+    "price": INTEGER,
+    "currency": "$",
+    "active": BOOLEAN,
+    "category": [
+      STRING,
+      ...
+    ], // for grouping by "dinner", "breakfast", "sides", "drinks" etc
+    "dietary": {
+      "vegan": BOOLEAN,
+      "vegetarian": BOOLEAN,
+      "glutenFree": BOOLEAN
     },
-    ...
-  ]
-}
+    "photo:": {
+      "imageUrl": STRING,
+      "attribution": {
+        "text": STRING,
+        "url": STRING
+      }
+    }
+  },
+  ...
+]
+
 ```
 
 
@@ -115,17 +114,16 @@ Testimonial content collected from happy patrons.
 Resource location: `/data/testimonials.json`
 
 ```json
-{
-  "items": [
-    {
-      "displayName": "Hungry Horace",
-      "date": TIMESTAMP,
-      "title": "Testimonial title",
-      "body": "Testimonial text which may contain markdown"
-    },
-    ...
-  ]
-}
+[
+  {
+    "displayName": "Hungry Horace",
+    "date": TIMESTAMP,
+    "title": "Testimonial title",
+    "body": "Testimonial text which may contain markdown"
+  },
+  ...
+]
+
 ```
 
 
@@ -136,19 +134,17 @@ A set of image assets for display in a gallery page or section
 Resource location: `/data/gallery.json`
 
 ```json
-{
-  "items": [
-    {
-      "caption": "A tasty thing that you can eat here",
-      "imageUrl": STRING,
-      "attribution": {
-        "text": STRING,
-        "url": STRING
-      }
-    },
-    ...
-  ]
-}
+[
+  {
+    "caption": "A tasty thing that you can eat here",
+    "imageUrl": STRING,
+    "attribution": {
+      "text": STRING,
+      "url": STRING
+    }
+  },
+  ...
+]
 ```
 
 
