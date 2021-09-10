@@ -129,7 +129,8 @@ Resource location: `/data/info.json`
     "email": STRING,
     "social": [
       {
-        "name": STRING, // For display
+        "channel": STRING,
+        "displayName": STRING,
         "url": STRING
       },
       ...

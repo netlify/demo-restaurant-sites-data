@@ -1,5 +1,6 @@
 const fs = require('fs');
 const chalk = require('chalk');
+const { ENETUNREACH } = require('constants');
 
 const client = require('contentful').createClient({
   space: process.env.CONTENTFUL_SPACE_ID,
@@ -7,6 +8,7 @@ const client = require('contentful').createClient({
 });
 
 var dataDir;
+
 
 // Construct the data object for the menu
 const fetchMenu = async () => {
@@ -45,7 +47,8 @@ const fetchMenu = async () => {
     });
   };
   return menu;
-}
+};
+
 
 // Construct the data object for the site pages
 const fetchPages = async () => {
@@ -63,7 +66,83 @@ const fetchPages = async () => {
     };
   };
   return pages;
-}
+};
+
+
+// Construct the data object for the testimonials
+const fetchTestimonials = async () => {
+  const entries = await client.getEntries({
+    content_type: 'testimonial'
+  });
+
+  let testimonials = [];
+  for (item in entries.items) {
+    let thisItem = entries.items[item];
+    testimonials.push({
+      "displayName": thisItem.fields.displayName,
+      "title": thisItem.fields.title,
+      "date": thisItem.fields.date,
+      "body": thisItem.fields.body
+    });
+  };
+  return testimonials;
+};
+
+
+// Construct the data object for the gallery
+const fetchGallery = async () => {
+  const entries = await client.getEntries({
+    content_type: 'photo'
+  });
+
+  let gallery = [];
+  for (item in entries.items) {
+    let thisItem = entries.items[item];
+    gallery.push({
+      "caption": thisItem.fields.caption,
+      "imageUrl": thisItem.fields.imageUrl,
+      "attribution": {
+        "text": thisItem.fields.attributionText,
+        "url": thisItem.fields.attributionUrl
+      }
+    });
+  };
+  return gallery;
+};
+
+
+// Construct the data object for the restaurant info
+const fetchInfo = async () => {
+  const entries = await client.getEntries({
+    content_type: 'info',
+    include: 1
+  });
+
+  const data = entries.items[0].fields;
+
+  console.log(data);
+  
+  let social = [];
+  data.social.forEach(channel => {
+    social.push(
+      channel.fields
+    )
+  });
+
+  return {
+    "name": data.name,
+    "strapline": data.strapline,
+    "contact": {
+      "streetAddress": data.address,
+      "coords": data.location,
+      "email": data.email,
+      "phone": data.telephone
+    },
+    "hours": data.openingHours,
+    "social": social
+
+  };
+};
 
 
 // save the data to the specified file
@@ -89,7 +168,12 @@ module.exports = {
       await saveData(menu, 'menu.json');
       const pages = await fetchPages();
       await saveData(pages, 'pages.json');
-
+      const testimonials = await fetchTestimonials();
+      await saveData(testimonials, 'testimonials.json');
+      const gallery = await fetchGallery();
+      await saveData(gallery, 'gallery.json');
+      const info = await fetchInfo();
+      await saveData(info, 'info.json');
     }
     catch(err) {
       utils.build.failBuild(`Error fetching data: ${err}`);
