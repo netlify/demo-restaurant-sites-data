@@ -117,16 +117,13 @@ const fetchInfo = async () => {
     content_type: 'info',
     include: 1
   });
-
-  const data = entries.items[0].fields;
-
-  console.log(data);
+  const data = entries.items[0].fields;  
   
   let social = [];
   data.social.forEach(channel => {
     social.push(
       channel.fields
-    )
+    );
   });
 
   return {
