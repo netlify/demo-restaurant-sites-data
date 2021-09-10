@@ -1,6 +1,6 @@
 {
   "name": "@netlify/demo-restaurant-sites-data",
-  "version": "0.2.1",
+  "version": "0.3.0",
   "description": "A Set of Netlify plugins to get data from different sources for an example restaurant site",
   "repository": {
     "type": "git",
