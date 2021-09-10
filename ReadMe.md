@@ -4,25 +4,70 @@ This repo discusses and collects data sources for a set of example sites.
 
 In order to maximise the opportunity for re-use, each data source will present its data to the build in an agreed JSON structure. In this way, any SSG or framework will be able to present the content from any data source we add in future as long as it conforms to this spec.
 
-## Content source build plugins
 
-- [Contentful](https://github.com/netlify/demo-restaurant-data-contentful) (WiP)
-- Sanity (coming later)
+## Table of contents
+
+- [Content source plugins](#plugins)
+- [Demo site implementations](#demos)
+- [Using a plugin in your site](#usage)
+- [Data API and schema](#schema)
+- [Building additional content source plugins](#development)
+
+---
+
+## Content source plugins 
+<a name="plugins"></a>
+
+Find each of these in this repo:
+
+- [Contentful](/plugins/contentful)
+- [Sanity](/plugins/sanity) (WiP)
 - Airtable (coming later)
-- Trello (coming later)
 - More sources (or should I say "sauces"?! Anyone? Hello? No?) TBD
 
-## Site implementations
+## Demo site implementations
+<a name="demos"></a>
 
 The following example sites which use these data sources are available.  Each site is intended to be functionally identical but implemented with a variety of frameworks and data sources.
 
-- Nuxt and Contentful: [repo](https://github.com/netlify/demo-restaurant-nuxt-contentful), [demo](https://demo-restaurant-contentful-nuxt.netlify.app/) (coming soon)
-- Nuxt and Trello repo, demo (coming soon)
-- Many more (coming later)
+
+|   | Contentful | Sanity |
+|---|------------|--------|
+| **Nuxt** | [repo](https://github.com/netlify/demo-restaurant-nuxt-contentful), [demo](https://demo-restaurant-contentful-nuxt.netlify.app/) | repo, demo  |
+| **Next** | repo, demo  | repo, demo  |
+| **11ty** | repo, demo  | repo, demo  |
+| **Astro** | repo, demo  | repo, demo  |
+
+
+## Using these plugins in your site
+<a name="usage"></a>
+
+These plugins are collected and packaged as an NPM package for convenience. Install and save to your site's config with:
+
+```
+npm install -s @netlify/demo-restaurant-sites-data`
+```
+
+Then specify in your site's `netlify.tom` file which data source plugin you wish to use:
+
+```toml
+
+[[plugins]]
+  # package = "./node_modules/demo-restaurant-sites-data/plugins/{PLUGIN_DIRECTORY}"
+  package = "./node_modules/demo-restaurant-sites-data/plugins/contentful"
+
+  [plugins.inputs]
+    # Directory for the generated JSON data files to reside in
+    dataDir = "data"
+
+```
+
+
 
 ## Data API and schema
+<a name="schema"></a>
 
-Each data abstraction to a content source will be provided by a Netlify Build Plugin. When the build runs, the plugin will request the data from the content source and save it to the build cache ready for the SSG to use, according to the structure described below.
+Each Build Plugin provides a data abstraction to a different content source. When the build runs, the specified plugin will request the data from the content source and save it to the build cache ready for the SSG to use, according to the structure described below.
 
 ### Menu
 
@@ -175,12 +220,16 @@ Resource location: `/data/pages.json`
 }
 ```
 
-## Mocked resources
 
-For development purposes, this repo is also deployed as a site in order to provide reference data sources as described above.
+## Building additional content source plugins
+<a name="development"></a>
 
-- `/data/menu.json` (coming soon)
-- `/data/info.json` (coming soon)
-- `/data/testimonials.json` (coming soon)
-- `/data/gallery.json` (coming soon)
-- `/data/pages.json` (coming soon)
+> TODO
+
+ - Add plugin code in a new directory in `/plugins`
+ - During development you can access your local dev version of the plugin in your test site by setting it's location to be file based in your `package.json`
+ ```json
+ "demo-restaurant-sites-data": "file:../demo-restaurant-sites-data",
+ ```
+ - Ensure that it's output confirms to the [schema](#schema) above
+ - Update the npm package
