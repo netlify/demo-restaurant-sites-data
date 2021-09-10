@@ -6,7 +6,7 @@ In order to maximise the opportunity for re-use, each data source will present i
 
 ## Content source build plugins
 
-- Contentful (coming soon)
+- [Contentful](https://github.com/netlify/demo-restaurant-data-contentful) (WiP)
 - Sanity (coming later)
 - Airtable (coming later)
 - Trello (coming later)
