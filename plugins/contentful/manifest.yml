@@ -1,0 +1,4 @@
+name: contentful-data
+inputs:
+  - name: dataDir
+    default: data

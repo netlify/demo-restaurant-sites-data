@@ -1,0 +1,4 @@
+name: sanity-data
+inputs:
+  - name: dataDir
+    default: data

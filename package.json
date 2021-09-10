@@ -1,0 +1,20 @@
+{
+  "name": "demo-belly-data-contentful",
+  "version": "1.0.0",
+  "description": "A Netlify build plugin to fetch content from a Contentful space and save it as JSON files in the ready for an SSG to use to generate an example restaurant site.",
+  "main": "index.js",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/netlify/demo-belly-data-contentful.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/netlify/demo-belly-data-contentful/issues"
+  },
+  "homepage": "https://github.com/netlify/demo-belly-data-contentful#readme",
+  "dependencies": {
+    "chalk": "^4.1.2",
+    "contentful": "^8.5.6"
+  }
+}
