@@ -1,6 +1,6 @@
 # Restaurant sites data
 
-This repo discusses and collects data sources for a set of example sites.
+This repo holds and documents data source plugins for a set of example sites.
 
 In order to maximise the opportunity for re-use, each data source will present its data to the build in an agreed JSON structure. In this way, any SSG or framework will be able to present the content from any data source we add in future as long as it conforms to this spec.
 
