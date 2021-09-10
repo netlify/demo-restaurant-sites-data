@@ -1,0 +1,20 @@
+{
+  "title": "The Im-pasta",
+  "description": "This meal is pretty sus. It's the sneakiest pasta you'll ever eat, because it'll surprise you with a delicious punch in the face. You'll never want to vent on this one.",
+  "price": 14,
+  "currency": "$",
+  "active": true,
+  "category": ["lunch", "dinner"],
+  "dietary": {
+    "vegan": false,
+    "vegetarian": false,
+    "glutenFree": false
+  },
+  "photo:": {
+    "imageUrl": "https://bit.ly/3E0ER0S",
+    "attribution": {
+      "text": "Thanks to Sorin Popa and Unsplash",
+      "url": "https://unsplash.com/photos/XAxvKp0tdwU"
+    }
+  }
+}
