@@ -70,7 +70,7 @@ const fetchPages = async () => {
 const saveData = async (data, file) => {
   const path = `${dataDir}/${file}`;
   await fs.writeFileSync(path, JSON.stringify(data));
-  console.log('Data fetched from', chalk.blue('Sanity'), 'and stashed', chalk.green(`=> ${path}`));
+  console.log('Data fetched from', chalk.blue('Sanity (WIP, so not really)'), 'and stashed', chalk.green(`=> ${path}`));
 }
 
 
