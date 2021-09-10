@@ -48,13 +48,13 @@ These plugins are collected and packaged as an NPM package for convenience. Inst
 npm install -s @netlify/demo-restaurant-sites-data`
 ```
 
-Then specify in your site's `netlify.tom` file which data source plugin you wish to use:
+Then specify in your site's `netlify.toml` file which data source plugin you wish to use:
 
 ```toml
 
 [[plugins]]
-  # package = "./node_modules/demo-restaurant-sites-data/plugins/{PLUGIN_DIRECTORY}"
-  package = "./node_modules/demo-restaurant-sites-data/plugins/contentful"
+  # package = "./node_modules/@netlify/demo-restaurant-sites-data/plugins/{PLUGIN_DIRECTORY}"
+  package = "./node_modules/@netlify/demo-restaurant-sites-data/plugins/contentful"
 
   [plugins.inputs]
     # Directory for the generated JSON data files to reside in
