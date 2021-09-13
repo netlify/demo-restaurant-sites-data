@@ -251,7 +251,7 @@ For development purposes, this repo is also [deployed as a site](https://demo-re
 [Index of data files](https://demo-restaurant-sites-data.netlify.app).
 
 - [`/data/menu.json`](https://demo-restaurant-sites-data.netlify.app/data/menu.json)
-- [`/data/info.json`](https://demo-restaurant-sites-data.netlify.app/data/info.json`)
+- [`/data/info.json`](https://demo-restaurant-sites-data.netlify.app/data/info.json)
 - [`/data/testimonials.json`](https://demo-restaurant-sites-data.netlify.app/data/testimonials.json)
 - [`/data/gallery.json`](https://demo-restaurant-sites-data.netlify.app/data/gallery.json)
 - [`/data/pages.json`](https://demo-restaurant-sites-data.netlify.app/data/pages.json)
