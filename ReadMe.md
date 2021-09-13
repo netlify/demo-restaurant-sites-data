@@ -12,11 +12,13 @@ In order to maximise the opportunity for re-use, each data source will present i
 - [Using a plugin in your site](#usage)
 - [Data API and schema](#schema)
 - [Building additional content source plugins](#development)
+- [Mocked data files for reference](#mocks)
 
 ---
 
-## Content source plugins 
 <a name="plugins"></a>
+
+## Content source plugins 
 
 Find each of these in this repo:
 
@@ -25,8 +27,10 @@ Find each of these in this repo:
 - Airtable (coming later)
 - More sources (or should I say "sauces"?! Anyone? Hello? No?) TBD
 
-## Demo site implementations
+
 <a name="demos"></a>
+
+## Demo site implementations
 
 The following example sites which use these data sources are available.  Each site is intended to be functionally identical but implemented with a variety of frameworks and data sources.
 
@@ -39,8 +43,9 @@ The following example sites which use these data sources are available.  Each si
 | **Astro** | repo, demo  | repo, demo  | repo, demo  |
 
 
-## Using these plugins in your site
 <a name="usage"></a>
+
+## Using these plugins in your site
 
 These plugins are collected and packaged as an NPM package for convenience. Install and save to your site's config with:
 
@@ -64,8 +69,9 @@ Then specify in your site's `netlify.toml` file which data source plugin you wis
 
 
 
-## Data API and schema
 <a name="schema"></a>
+
+## Data API and schema
 
 Each Build Plugin provides a data abstraction to a different content source. When the build runs, the specified plugin will request the data from the content source and save it to the build cache ready for the SSG to use, according to the structure described below.
 
@@ -235,6 +241,8 @@ Resource location: `/data/pages.json`
  - Ensure that it's output confirms to the [schema](#schema) above
  - Update the npm package
 
+
+<a name="mocks"></a>
 
 ## Mocked resources
 
