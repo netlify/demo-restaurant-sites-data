@@ -234,3 +234,17 @@ Resource location: `/data/pages.json`
  ```
  - Ensure that it's output confirms to the [schema](#schema) above
  - Update the npm package
+
+
+## Mocked resources
+
+For development purposes, this repo is also [deployed as a site](https://demo-restaurant-sites-data.netlify.app) in order to provide reference data sources as described above.
+
+[Index of data files](https://demo-restaurant-sites-data.netlify.app).
+
+- [`/data/menu.json`](https://demo-restaurant-sites-data.netlify.app/data/menu.json)
+- [`/data/info.json`](https://demo-restaurant-sites-data.netlify.app/data/info.json`)
+- [`/data/testimonials.json`](https://demo-restaurant-sites-data.netlify.app/data/testimonials.json)
+- [`/data/gallery.json`](https://demo-restaurant-sites-data.netlify.app/data/gallery.json)
+- [`/data/pages.json`](https://demo-restaurant-sites-data.netlify.app/data/pages.json)
+

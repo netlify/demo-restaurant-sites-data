@@ -1,0 +1,3 @@
+[build] 
+  publish = "www"
+  command = "echo No build for this reference site"
