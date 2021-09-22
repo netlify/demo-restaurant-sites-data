@@ -35,12 +35,12 @@ Find each of these in this repo:
 The following example sites which use these data sources are available.  Each site is intended to be functionally identical but implemented with a variety of frameworks and data sources.
 
 
-|   | Contentful | Sanity | Airtable |
-|---|------------|--------|--------- |
-| **Nuxt** | [repo](https://github.com/netlify/demo-restaurant-nuxt-contentful), [demo](https://demo-restaurant-contentful-nuxt.netlify.app/) | repo, demo  | repo, demo  |
-| **Next** | repo, demo  | repo, demo  | repo, demo  |
-| **11ty** | repo, demo  | repo, demo  | repo, demo  |
-| **Astro** | repo, demo  | repo, demo  | repo, demo  |
+|   | Contentful | Sanity | Prismic | Airtable |
+|---|------------|--------|---------|----------|
+| **Nuxt** | [repo](https://github.com/netlify/demo-restaurant-nuxt-contentful), [demo](https://demo-restaurant-contentful-nuxt.netlify.app/) | repo, demo  | repo, demo  | repo, demo  |
+| **Next** | repo, demo  | repo, demo  | repo, demo  | repo, demo  |
+| **11ty** | repo, demo  | repo, demo  | repo, demo  | repo, demo  |
+| **Astro** | repo, demo  | repo, demo  | repo, demo  | repo, demo  |
 
 
 <a name="usage"></a>
