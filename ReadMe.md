@@ -38,9 +38,10 @@ The following example sites which use these data sources are available.  Each si
 |   | Contentful | Sanity | Prismic | Airtable |
 |---|------------|--------|---------|----------|
 | **Nuxt** | [repo](https://github.com/netlify/demo-restaurant-nuxt-contentful), [demo](https://demo-restaurant-contentful-nuxt.netlify.app/) | repo, demo  | repo, demo  | repo, demo  |
-| **Next** | repo, demo  | repo, demo  | repo, demo  | repo, demo  |
+| **Next** | [repo](https://github.com/charliegerard/demo-restaurant-contentful-next), [demo](https://demo-restaurant-contentful-next.netlify.app/)  | repo, demo  | repo, demo  | repo, demo  |
 | **11ty** | repo, demo  | repo, demo  | repo, demo  | repo, demo  |
 | **Astro** | repo, demo  | repo, demo  | repo, demo  | repo, demo  |
+| **Solid** | repo, demo  | repo, demo  | repo, demo  | repo, demo  |
 
 
 <a name="usage"></a>
