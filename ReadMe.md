@@ -40,7 +40,7 @@ The following example sites which use these data sources are available.  Each si
 | **Nuxt** | [repo](https://github.com/netlify/demo-restaurant-nuxt-contentful), [demo](https://demo-restaurant-contentful-nuxt.netlify.app/) | repo, demo  | repo, demo  | repo, demo  |
 | **Next** | [repo](https://github.com/charliegerard/demo-restaurant-contentful-next), [demo](https://demo-restaurant-contentful-next.netlify.app/)  | repo, demo  | repo, demo  | repo, demo  |
 | **11ty** | repo, demo  | repo, demo  | repo, demo  | repo, demo  |
-| **Astro** | repo, demo  | repo, demo  | repo, demo  | repo, demo  |
+| **Astro** | [repo](https://github.com/netlify/demo-restaurant-astro-contentful), [demo](https://demo-restaurant-astro-contentful.netlify.app/)  | repo, demo  | repo, demo  | repo, demo  |
 | **Solid** | repo, demo  | repo, demo  | repo, demo  | repo, demo  |
 
 
