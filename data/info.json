@@ -1,0 +1,54 @@
+{
+  "name": "The DX Deli and Grill",
+  "strapline": "Too much of a good thing",
+  "contact": {
+    "streetAddress": [
+      "8 Some Fd.",
+      "Cookietown, OK 73531 ",
+      "USA"
+    ],
+    "coords": {
+      "lat": "34.27588",
+      "long": "-98.45314"
+    },
+    "email": "dxdeli@netlify.com",
+    "social": [
+      {
+        "name": "Twitter",
+        "url": "https://twitter.com/dxdeli"
+      }
+    ],
+    "phone": "789-789-0000"
+  },
+  "hours": {
+    "Monday": {
+      "open": TIME,
+      "close": TIME
+    },
+    "Tuesday": {
+      "open": TIME,
+      "close": TIME
+    },
+    "Wednesday": {
+      "open": TIME,
+      "close": TIME
+    },
+    "Thursday": {
+      "open": TIME,
+      "close": TIME
+    },
+    "Friday": {
+      "open": TIME,
+      "close": TIME
+    },
+    "Saturday": {
+      "open": TIME,
+      "close": TIME
+    },
+    "Sunday": {
+      "open": TIME,
+      "close": TIME
+    }
+  }
+
+}

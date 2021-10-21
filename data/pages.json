@@ -1,0 +1,14 @@
+{
+  "recipes": {
+    "title": "Recipes",
+    "description": "All the secret ingredients ever",
+    "body": "# Don't share these secrets ## First Secret Sauce - butter - more butter",
+    "heroImage": {
+      "imageUrl": "https://bit.ly/3jYvsPx",
+      "attribution": {
+        "text": "thanks Hawks Philsworth & Shake Shack",
+        "url": "https://www.shakeshack.com/"
+      }
+    }
+  }
+}
